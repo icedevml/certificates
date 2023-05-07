@@ -88,7 +88,7 @@ func (f *FinalizeRequest) Validate() error {
 }
 
 var defaultOrderExpiry = time.Hour * 24
-var defaultOrderBackdate = time.Minute
+var defaultOrderBackdate = time.Hour * 3
 
 // NewOrder ACME api for creating a new order.
 func NewOrder(w http.ResponseWriter, r *http.Request) {
